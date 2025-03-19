@@ -55,15 +55,15 @@
     }
     </style>
 </head>
-<body class="overflow-x-hidden">
+<body class="object-cover">
     <header class="w-full">
         <div class="bg-[url(https://lof8sc.yourbrand.studio/files/dynamicContent/sites/lof8sc/images/en/webpage_13/m5p6d1a5/element_252/rwdMode_1/2400x700/main.webp)] bg-center bg-cover bg-no-repeat h-[80vh] md:h-[100vh] lg:h-[150vh] w-full text-center">
             <nav class="flex justify-between items-center px-4 md:px-8 lg:px-12 py-4">
                 <div class="w-[100px] md:w-[140px] lg:w-[150px]">
                     <img class="w-full" src="https://lof8sc.yourbrand.studio/files/dynamicContent/sites/lof8sc/images/en/layout_2/m5p6csa2/element_246/rwdMode_1/138x90/logo.webp" alt="">
                 </div>
-                <div class="flex items-center gap-4 md:gap-6 lg:gap-8">
-                    <ul class="hidden md:hidden lg:flex items-center gap-4 lg:gap-8">
+                <div class="hidden md:hidden lg:flex items-center gap-4 md:gap-6 lg:gap-8">
+                    <ul class="lg:flex items-center gap-4 lg:gap-8">
                         <li><a class="hover:bg-white px-2 font-semibold" href="index.html">HOME</a></li>
                         <li><a class="hover:bg-white px-2" href="Pages/offer.html">OFFER</a></li>
                         <li><a class="hover:bg-white px-2" href="Pages/gallery.html">GALLERY</a></li>
@@ -75,7 +75,23 @@
                         SIGN UP
                     </button></a>
                 </div>
+                <button id="menu-btn" class="block md:block lg:hidden text-white text-3xl focus:outline-none border border-red-500">
+                        <i class="fas fa-bars"></i>
+                </button>
             </nav>
+            <div id="menu" class="hidden lg:hidden w-[100%] bg-gray-800 text-white py-4">
+                <ul class="flex flex-col items-center gap-4">
+                    <li><a class="hover:bg-white px-2 font-semibold" href="../index.html">HOME</a></li>
+                    <li><a class="hover:bg-white px-2" href="Pages/offer.html">OFFER</a></li>
+                    <li><a class="hover:bg-white px-2" href="Pages/gallery.html">GALLERY</a></li>
+                    <li><a class="hover:bg-white px-2" href="Pages/blog.html">BLOG</a></li>
+                    <li><a class="hover:bg-white px-2" href="Pages/aboutUs.html">ABOUT US</a></li>
+                    <li><a class="hover:bg-white px-2" href="Pages/contact.html">CONTACT</a></li>
+                    <li><a href="Pages/contact.html"><button class="border-1 border-white border-solid rounded-full py-2 px-4 hover:bg-white hover:text-black cursor-pointer">
+                        SIGN UP
+                    </button></a></li>
+                </ul>
+            </div>
             <section class="mt-20 md:mt-40 lg:mt-60 text-white px-4">
                 <p class="mb-4 md:mb-6 text-lg md:text-xl lg:text-2xl"><i>Adventures</i></p>
                 <h1 class="mb-6 md:mb-8 lg:mb-12 text-3xl md:text-4xl lg:text-6xl font-semibold">Let yourself be impressed</h1>
@@ -120,7 +136,6 @@
                 </div>
             </div>
         </section>
-        <!-- grid section -->
         <section class="h-[130vh]">
             <div class="mb-12">
                 <h1 class=" font-normal text-center text-4xl">GALLERY</h1>
@@ -159,5 +174,16 @@
         </div>
         <h2 class="text-center">A website created in the <a href="https://templates.webwave.me/lof8sc?_gl=1*cqwgug*_gcl_au*NTI0Mjg2MjIuMTc0MDE0NDQ4OQ" target="_blank">Web<span class="text-green-400">Wave</span></a> builder.</h2>
     </footer>
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const menu = document.getElementById("menu");
+        const icon = menuBtn.querySelector("i");
+
+        menuBtn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+            icon.classList.toggle("fa-bars");
+            icon.classList.toggle("fa-times");
+        });
+    </script>
 </body>
 </html>
