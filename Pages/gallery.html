@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/fav.png" type="image/png">
+    <title>Template Preview Active</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        .swiper {
+            width: 100%;
+            height: 600px;
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+    </style>
+</head>
+<body>
+    <header class="w-full">
+        <div class="w-full text-center">
+            <nav class="flex justify-between items-center px-4 md:px-8 lg:px-12 py-4">
+                <div class="w-[100px] md:w-[140px] lg:w-[150px]">
+                    <img class="w-full" src="https://lof8sc.yourbrand.studio/files/dynamicContent/sites/lof8sc/images/en/layout_2/m5p6csa2/element_246/rwdMode_1/138x90/logo.webp" alt="">
+                </div>
+                <div class="flex items-center gap-4 md:gap-6 lg:gap-8">
+                    <ul class="hidden md:hidden lg:flex items-center gap-4 lg:gap-8">
+                        <li><a class="hover:bg-white px-2 font-semibold" href="../index.html">HOME</a></li>
+                        <li><a class="hover:bg-white px-2" href="./offer.html">OFFER</a></li>
+                        <li><a class="hover:bg-white px-2" href="./gallery.html">GALLERY</a></li>
+                        <li><a class="hover:bg-white px-2" href="./blog.html">BLOG</a></li>
+                        <li><a class="hover:bg-white px-2" href="./aboutUs.html">ABOUT US</a></li>
+                        <li><a class="hover:bg-white px-2" href="./contact.html">CONTACT</a></li>
+                    </ul>
+                    <a href="./contact.html"><button class="border-1 border-black border-solid rounded-full py-2 px-4 md:px-8 lg:px-12 hover:bg-black hover:text-white cursor-pointer">
+                        SIGN UP
+                    </button></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="flex justify-center items-center h-[40vh]">
+            <div class="lg:w-[50%] text-center">
+                <h1 class="text-4xl font-bold mb-5">Gallery</h1>
+                <p>Curabitur sit amet purus semper tortor tempor lacinia eu in tortor. Integer nisl risus, condimentum sed lacinia in, tincidunt eget mi. Praesent finibus mollis blandit. Suspendisse vulputate turpis et erat iaculis viverra.</p>
+            </div>
+        </section>
+        <section class="mb-2">
+            <div class="text-2xl text-green-700 flex justify-center items-center mb-6 gap-10 hover:text-black">
+                <a href=""><p>Gallery 1</p></a>
+                <a href=""><p>Gallery 2</p></a>
+                <a href=""><p>Gallery 3</p></a>
+                <a href=""><p>Gallery 4</p></a>
+            </div>
+        </section>
+        <section class="lg:w-[80%] m-auto mb-1">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="w-full h-full object-cover"
+                            src="https://lof8sc.yourbrand.studio/files/dynamicContent/sites/lof8sc/images/en/webpage_18/m5p6cund/element_294/0/rwdMode_1/1200x507/Gallery_6.webp" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="w-full h-full object-cover"
+                            src="https://lof8sc.yourbrand.studio/files/dynamicContent/sites/lof8sc/images/en/webpage_18/m5p6cund/element_294/1/rwdMode_1/1200x507/Gallery_5.webp" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="w-full h-full object-cover"
+                            src="https://lof8sc.yourbrand.studio/files/dynamicContent/sites/lof8sc/images/en/webpage_18/m5p6cund/element_294/2/rwdMode_1/1200x507/Gallery_4.webp" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="w-full h-full object-cover"
+                            src="https://lof8sc.yourbrand.studio/files/dynamicContent/sites/lof8sc/images/en/webpage_18/m5p6cund/element_294/3/rwdMode_1/1200x507/Gallery_3.webp" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="w-full h-full object-cover"
+                            src="https://lof8sc.yourbrand.studio/files/dynamicContent/sites/lof8sc/images/en/webpage_18/m5p6cund/element_294/4/rwdMode_1/1200x507/Gallery_2.webp" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="w-full h-full object-cover"
+                            src="https://lof8sc.yourbrand.studio/files/dynamicContent/sites/lof8sc/images/en/webpage_18/m5p6cund/element_294/5/rwdMode_1/1200x507/Gallery_1.webp" alt="">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+        <section class="lg:w-[65%] m-auto mb-10 flex justify-center gap-1 cursor-pointer ">
+            <div class="w-[20%] h-[200px] overflow-hidden hover:blur-[1px]">
+                <img class="w-full h-full object-cover"
+                    src="https://lof8sc.yourbrand.studio/files/dynamicContent/sites/lof8sc/images/en/webpage_18/m5p6cund/element_294/0/rwdMode_1/1200x507/Gallery_6.webp" alt="">
+            </div>
+            <div class="w-[20%] h-[200px] overflow-hidden hover:blur-[1px]">
+                <img class="w-full h-full object-cover"
+                    src="https://lof8sc.yourbrand.studio/files/dynamicContent/sites/lof8sc/images/en/webpage_18/m5p6cund/element_294/1/rwdMode_1/1200x507/Gallery_5.webp" alt="">
+            </div>
+            <div class="w-[20%] h-[200px] overflow-hidden hover:blur-[1px]">
+                <img class="w-full h-full object-cover"
+                    src="https://lof8sc.yourbrand.studio/files/dynamicContent/sites/lof8sc/images/en/webpage_18/m5p6cund/element_294/2/rwdMode_1/1200x507/Gallery_4.webp" alt="">
+            </div>
+            <div class="w-[20%] h-[200px] overflow-hidden hover:blur-[1px]">
+                <img class="w-full h-full object-cover"
+                    src="https://lof8sc.yourbrand.studio/files/dynamicContent/sites/lof8sc/images/en/webpage_18/m5p6cund/element_294/3/rwdMode_1/1200x507/Gallery_3.webp" alt="">
+            </div>
+            <div class="w-[20%] h-[200px] overflow-hidden hover:blur-[1px]">
+                <img class="w-full h-full object-cover"
+                    src="https://lof8sc.yourbrand.studio/files/dynamicContent/sites/lof8sc/images/en/webpage_18/m5p6cund/element_294/4/rwdMode_1/1200x507/Gallery_2.webp" alt="">
+            </div>
+            <div class="w-[20%] h-[200px] overflow-hidden hover:blur-[1px]">
+                <img class="w-full h-full object-cover"
+                    src="https://lof8sc.yourbrand.studio/files/dynamicContent/sites/lof8sc/images/en/webpage_18/m5p6cund/element_294/5/rwdMode_1/1200x507/Gallery_1.webp" alt="">
+            </div>
+        </section>
+    </main>
+    <footer class="h-auto md:h-[30vh] bg-gray-700 flex justify-center items-center flex-col text-white py-8 md:py-0">
+        <h3 class="text-lg mb-5 font-bold">Check us out:</h3>
+        <div class="cursor-pointer mb-5 font-light flex gap-5">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f border-1 border-solid border-gray-500 rounded-[100%] p-3 text-2xl"></i></a>
+            <a href="https://www.youtube.com/@WebWaveMe/" target="_blank"><i class="fa-brands fa-youtube border-1 border-solid border-gray-500 rounded-[100%] p-3 text-2xl"></i></a>
+            <a href="https://www.instagram.com/mm__salmon/?next=%2F/" target="_blank"><i class="fa-brands fa-instagram border-1 border-solid border-gray-500 rounded-[100%] p-3 text-2xl"></i></a>           
+        </div>
+        <h2 class="text-center">A website created in the <a href="https://templates.webwave.me/lof8sc?_gl=1*cqwgug*_gcl_au*NTI0Mjg2MjIuMTc0MDE0NDQ4OQ" target="_blank">Web<span class="text-green-400">Wave</span></a> builder.</h2>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        autoplay: {
+            delay: 3000,
+        },
+        pagination: {
+            el: '.swiper-pagination', 
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next', 
+            prevEl: '.swiper-button-prev', 
+        }
+    });
+    </script>
+</body>
+</html>
